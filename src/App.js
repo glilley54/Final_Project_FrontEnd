@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
@@ -19,8 +19,6 @@ const App = () => {
         <Route exact path="/" component={Home} />
         <Route path="/order" component={Items} />
         <Route path="/instructions" component={Instructions} />
-
-        <Route component={ErrorPage}/>
         </Switch>
       </>
     </Router>

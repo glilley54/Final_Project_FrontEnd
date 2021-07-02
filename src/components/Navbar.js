@@ -20,7 +20,7 @@ const NavBar = () => {
       <li>
         <Link to="/instructions">Instructions</Link>
       </li>
-      <link to="/basket">Basket</link>
+      <Link to="/basket">Basket</Link>
       <li>
         <button onClick={goBack}>Back</button>
       </li>
