@@ -1,15 +1,32 @@
-import './App.css';
-import MyNavBar from "./components/Navbar"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import React from "react";
-import Button from "react-bootstrap/Button";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-function App() {
+import NavBar from "./components/NavBar";
+import Instructions from "./components/Instructions";
+import Home from "./components/Home";
+import Items from "./components/Items";
+import ErrorPage from "./components/ErrorPage";
+
+
+const App = () => {
+  
+
   return (
-    <div>
-      <MyNavBar/>
-    </div>
+    <Router>
+      <>
+        <NavBar />
+        <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/order" component={Items} />
+        <Route path="/instructions" component={Instructions} />
+
+        <Route component={ErrorPage}/>
+        </Switch>
+      </>
+    </Router>
   );
 }
+
+
 
 export default App;
