@@ -11,7 +11,8 @@ const Items = () => {
 
   const itemsNodes = items.map((item) => (
 
-     item.type
+    item.type
+    
 ));
   return (
       <p>{itemsNodes}</p>
