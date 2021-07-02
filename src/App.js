@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Instructions from "./components/Instructions";
 import Home from "./components/Home";
 import Items from "./components/Items";
-import ErrorPage from "./components/ErrorPage";
+
 
 
 const App = () => {
