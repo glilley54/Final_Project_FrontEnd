@@ -1,32 +1,32 @@
-// import React, { useEffect, useState } from "react";
-// import { Card, CardColumns, Button } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Card, CardColumns, Button,} from "react-bootstrap";
 
-// const Items2 = () => {
-//     const [data, setData] = useState([]);
+const Items = () => {
+    const [items, setItems] = useState([]);
    
-//      useEffect(() => {
-//        fetch("http://localhost:8080/items")
-//          .then((res) => res.json())
-//          .then((data) => setData(data.results));
-//      }, []);
+     useEffect(() => {
+       fetch("http://localhost:8080/items")
+         .then((res) => res.json())
+         .then((data) => setItems(data.results));
+     }, []);
 
-//   return (
-//     <CardColumns>
-//       {data.map((items) => (
-//         <Card className="m-4" key={items.type} style={{ width: "20rem" }}>
-//           <Card.Img variant="top" src={items.image} />
+  return (
+    <CardColumns>
+      {items.map((item) => (
+        <Card className="m-4" key={item.type} style={{ width: "20rem" }}>
+          <Card.Img variant="top" src={item.image} />
 
-//           <Card.Body>
-//             <Card.Title>{items.type}</Card.Title>
-//             <Card.Text>{items.description}</Card.Text>
-//             <Button variant="primary" href={items.url} target="_blank">
-//               More Info
-//             </Button>
-//           </Card.Body>
-//         </Card>
-//       ))}
-//     </CardColumns>
-//   );
-// }
+          <Card.Body>
+            <Card.Title>{item.type}</Card.Title>
+            <Card.Text>{item.description}</Card.Text>
+            <Button variant="primary" href={item.url} target="_blank">
+              More Info
+            </Button>
+          </Card.Body>
+        </Card>
+      ))}
+    </CardColumns>
+  );
+}
 
-// export default Items2
+export default Items
