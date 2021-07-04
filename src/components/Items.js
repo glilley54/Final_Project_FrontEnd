@@ -12,10 +12,21 @@ const Items = () => {
   const itemsNodes = items.map((item) => (
 
     item.type
+   
     
 ));
+
+
+
+
   return (
+    
+
       <p>{itemsNodes}</p>
+      
+    
+
+     
   )
 }
 

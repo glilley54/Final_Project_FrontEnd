@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Instructions from "./components/Instructions";
 import Home from "./components/Home";
 import Items from "./components/Items";
+import CustomerDetailsForm from "./components/CustomerDetailsForm";
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
         <Route exact path="/" component={Home} />
         <Route path="/order" component={Items} />
         <Route path="/instructions" component={Instructions} />
+        <Route path="/customerdetails" component={CustomerDetailsForm} />
         </Switch>
       </>
     </Router>

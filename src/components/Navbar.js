@@ -22,6 +22,11 @@ const NavBar = () => {
       </li>
       <Link to="/basket">Basket</Link>
       <li>
+      
+      <Link to="/customerdetails">Customer Details</Link>
+      </li>
+      <li>
+
         <button onClick={goBack}>Back</button>
       </li>
     </ul>

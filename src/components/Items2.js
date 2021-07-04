@@ -1,7 +1,7 @@
 // import React, { useEffect, useState } from "react";
 // import { Card, CardColumns, Button } from "react-bootstrap";
 
-// const Items = () => {
+// const Items2 = () => {
 //     const [data, setData] = useState([]);
    
 //      useEffect(() => {
@@ -12,14 +12,14 @@
 
 //   return (
 //     <CardColumns>
-//       {data.map((item) => (
-//         <Card className="m-4" key={item.type} style={{ width: "20rem" }}>
-//           <Card.Img variant="top" src={item.image} />
+//       {data.map((items) => (
+//         <Card className="m-4" key={items.type} style={{ width: "20rem" }}>
+//           <Card.Img variant="top" src={items.image} />
 
 //           <Card.Body>
-//             <Card.Title>{item.type}</Card.Title>
-//             <Card.Text>{item.description}</Card.Text>
-//             <Button variant="primary" href={item.url} target="_blank">
+//             <Card.Title>{items.type}</Card.Title>
+//             <Card.Text>{items.description}</Card.Text>
+//             <Button variant="primary" href={items.url} target="_blank">
 //               More Info
 //             </Button>
 //           </Card.Body>
@@ -29,4 +29,4 @@
 //   );
 // }
 
-// export default Items
+// export default Items2
