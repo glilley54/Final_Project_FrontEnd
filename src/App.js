@@ -34,6 +34,10 @@ const App = () => {
     setBasket([...basket,item]);
   }
 
+  const handleRemoveFromBasket =(item) =>{
+    basket.remove(item);
+  }
+
 
 
 
@@ -52,7 +56,7 @@ const App = () => {
         <Route exact path="/" component={Home} />
 
         <Route path="/order" render={()=> <Items handleAddToBasket={handleAddToBasket}/>}/>
-        <Route path="/basket" render={()=> <Basket basket={basket}/>}/>
+        <Route path="/basket" render={()=> <Basket basket={basket} handleRemoveFromBasket={handleRemoveFromBasket}/>}/>
         
 
         <Route path="/instructions" component={Instructions} />

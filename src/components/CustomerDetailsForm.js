@@ -24,7 +24,7 @@ const CustomerDetailsForm = () => (
 
   <Form.Group controlId="formGridAddress1">
     <Form.Label>Email</Form.Label>
-    <Form.Control placeholder="1234 Main St" />
+    <Form.Control placeholder="myemail@email.com" />
   </Form.Group>
 
   <Form.Group controlId="formGridAddress2">
