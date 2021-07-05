@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useHistory } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const NavBar = () => {
@@ -34,3 +35,5 @@ const NavBar = () => {
 }
 
 export default NavBar;
+
+
