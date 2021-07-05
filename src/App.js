@@ -6,10 +6,17 @@ import Instructions from "./components/Instructions";
 import Home from "./components/Home";
 import Items from "./components/Items2";
 import CustomerDetailsForm from "./components/CustomerDetailsForm";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 
 const App = () => {
+
+  // 1.define basket state - new empty arrayList
+  // 2. write function to add items to basket
+  // 3.pass down to items component
   
 
   return (

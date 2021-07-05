@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardColumns, Button,} from "react-bootstrap";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Items = () => {
     const [items, setItems] = useState([]);
@@ -7,13 +8,13 @@ const Items = () => {
      useEffect(() => {
        fetch("http://localhost:8080/items")
          .then((res) => res.json())
-         .then((data) => setItems(data.results));
+         .then((data) => setItems(data));
      }, []);
 
   return (
     <CardColumns>
       {items.map((item) => (
-        <Card className="m-4" key={item.type} style={{ width: "20rem" }}>
+        <Card className="m-4" key={item.id} style={{ width: "20rem" }}>
           <Card.Img variant="top" src={item.image} />
 
           <Card.Body>
