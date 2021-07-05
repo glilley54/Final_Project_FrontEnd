@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Instructions from "./components/Instructions";
 import Home from "./components/Home";
 import Items from "./components/Items";
+import Basket from "./components/Basket";
 import CustomerDetailsForm from "./components/CustomerDetailsForm";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState,useEffect } from "react";
@@ -19,16 +20,10 @@ const App = () => {
   const [basket, setBasket] = useState([]);
 
 
-  const fetchBasket = async () => {
-    setBasket(basket)
-  }
+  
 
 
-  useEffect(() => {
-    fetchBasket();
-  }, [])
 
-console.log(basket);
 
     
   // })
