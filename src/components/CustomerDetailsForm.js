@@ -11,14 +11,14 @@ const CustomerDetailsForm = () => (
   <Form.Row>
     <Form.Group as={Col} controlId="formGridEmail">
       <Form.Label>First Name</Form.Label>
-      <Form.Control type="email" placeholder="Enter email" />
+      <Form.Control type="name" placeholder="First Name" />
     </Form.Group>
 
-    
 
-    <Form.Group as={Col} controlId="formGridPassword">
+
+    <Form.Group as={Col} controlId="formGridEmail">
       <Form.Label>Last Name</Form.Label>
-      <Form.Control type="password" placeholder="Password" />
+      <Form.Control type="name" placeholder="Last Name" />
     </Form.Group>
   </Form.Row>
 
@@ -42,3 +42,10 @@ const CustomerDetailsForm = () => (
 )
 
 export default CustomerDetailsForm
+
+
+// const handlePost = function(pirate){
+//   const request = new Request();
+//   request.post("/api/pirates", pirate)
+//   .then(() => window.location = '/customers)
+// }
