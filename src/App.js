@@ -55,7 +55,11 @@ console.log(basket);
         <NavBar />
         <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/order" component={Items} handleAddToBasket={handleAddToBasket}/>
+
+        <Route path="/order" render={()=> <Items handleAddToBasket={handleAddToBasket}/>}/>
+        <Route path="/basket" render={()=> <Basket basket={basket}/>}/>
+        
+
         <Route path="/instructions" component={Instructions} />
         <Route path="/customerdetails" component={CustomerDetailsForm} />
         </Switch>
@@ -64,6 +68,8 @@ console.log(basket);
   );
 }
 
+
+// handleAddToBasket={handleAddToBasket}
 
 
 export default App;
