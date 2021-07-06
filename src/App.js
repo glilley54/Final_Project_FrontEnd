@@ -40,7 +40,7 @@ const App = () => {
     
     const index = newBasket.indexOf(item)
     newBasket.splice(index,1);
-    setBasket(newBasket)
+    setBasket([...newBasket])
     // refreshPage()
 
   }
@@ -54,8 +54,8 @@ const App = () => {
     console.log(customer)
 
 
-    const handleAddBasketToOrder = (item) =>{
-      setCustomer([...order,item]);
+    // const handleAddBasketToOrder = (item) =>{
+    //   setCustomer([...order,item]);
   
     
     // setCustomer(temp);
@@ -112,7 +112,8 @@ const App = () => {
         
 
         <Route path="/instructions" component={Instructions} />
-        <Route path="/customerDetails" render={()=><CustomerForm addCustomer={addCustomer} <Basket basket{basket} />}/>
+        <Route path="/customerDetails" render={()=><CustomerForm addCustomer={addCustomer}  basket{...basket} />}/>
+        <Route path="/customerDetails" render={()=><CustomerForm addCustomer={addCustomer}  basket{...basket} />}/>
         </Switch>
       </>
     </Router>

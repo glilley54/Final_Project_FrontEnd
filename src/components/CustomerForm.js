@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {postCustomer} from "./CustomerService";
 
-const CustomerForm = ({addCustomer}) => {
+const CustomerForm = ({basket}) => {
     
     const [formData, setFormData] = useState({})
 
