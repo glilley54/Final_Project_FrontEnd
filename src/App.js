@@ -52,6 +52,11 @@ const App = () => {
 
   const addCustomer = (customer) =>{
     console.log(customer)
+
+
+    const handleAddBasketToOrder = (item) =>{
+      setCustomer([...order,item]);
+  
     
     // setCustomer(temp);
   }
@@ -80,6 +85,7 @@ const App = () => {
   // }
 
 
+
   
   
 
@@ -106,7 +112,7 @@ const App = () => {
         
 
         <Route path="/instructions" component={Instructions} />
-        <Route path="/customerDetails" render={()=><CustomerForm addCustomer={addCustomer} />}/>
+        <Route path="/customerDetails" render={()=><CustomerForm addCustomer={addCustomer} <Basket basket{basket} />}/>
         </Switch>
       </>
     </Router>
