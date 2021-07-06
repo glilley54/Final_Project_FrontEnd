@@ -13,7 +13,7 @@ const CustomerForm = ({addCustomer}) => {
     const onSubmit = (e) =>{
         e.preventDefault();
         postCustomer(formData).then((data)=>{
-            addCustomer(data);
+            // addCustomer(data);
         })
     }
 

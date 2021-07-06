@@ -24,9 +24,9 @@ const App = () => {
 
 
   const addCustomer = (customer) =>{
-    const temp = customer.map(s =>s);
-    temp.push(customer);
-    setCustomer(temp);
+    console.log(customer)
+    
+    // setCustomer(temp);
   }
 
   
@@ -74,7 +74,7 @@ const App = () => {
         
 
         <Route path="/instructions" component={Instructions} />
-        <Route path="/customerDetails" component={CustomerForm} />
+        <Route path="/customerDetails" render={()=><CustomerForm addCustomer={addCustomer}/>}/>
         </Switch>
       </>
     </Router>
