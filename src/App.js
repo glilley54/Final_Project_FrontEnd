@@ -1,4 +1,4 @@
-
+import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Instructions from "./components/Instructions";
@@ -19,6 +19,33 @@ const App = () => {
   // 1.define basket state - new empty arrayList
 
   const [basket, setBasket] = useState([]);
+
+  useEffect(()=>{
+    updateBasket()
+
+  },[basket])
+
+  // function refreshPage() {
+  //   window.location.reload()
+  // }
+  const updateBasket= ()=>{
+    setBasket(basket)
+
+  }
+
+
+  const handleRemoveFromBasket = (item) => {
+
+    const newBasket = basket
+    
+    const index = newBasket.indexOf(item)
+    newBasket.splice(index,1);
+    setBasket(newBasket)
+    // refreshPage()
+
+  }
+
+
 
   const [customer, setCustomer] = useState([]);
 
@@ -43,9 +70,14 @@ const App = () => {
     setBasket([...basket,item]);
   }
 
-  const handleRemoveFromBasket =(item) =>{
-    basket.remove(item);
-  }
+  // 3.function to remove item from basket
+
+  // const handleRemoveFromBasket =(item) =>{
+  //     // delete locally
+  //     setBasket(basket.filter(basket => item !== item)
+  //   };
+  
+  // }
 
 
   
@@ -70,11 +102,11 @@ const App = () => {
         <Route exact path="/" component={Home} />
 
         <Route path="/order" render={()=> <Items handleAddToBasket={handleAddToBasket}/>}/>
-        <Route path="/basket" render={()=> <Basket basket={basket} handleRemoveFromBasket={handleRemoveFromBasket}/>}/>
+        <Route path="/basket" render={()=> <Basket basket={basket} handleRemoveFromBasket={handleRemoveFromBasket} />}/>
         
 
         <Route path="/instructions" component={Instructions} />
-        <Route path="/customerDetails" render={()=><CustomerForm addCustomer={addCustomer}/>}/>
+        <Route path="/customerDetails" render={()=><CustomerForm addCustomer={addCustomer} />}/>
         </Switch>
       </>
     </Router>
