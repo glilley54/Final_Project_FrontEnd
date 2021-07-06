@@ -5,7 +5,7 @@ import Instructions from "./components/Instructions";
 import Home from "./components/Home";
 import Items from "./components/Items";
 import Basket from "./components/Basket";
-import CustomerDetailsForm from "./components/CustomerDetailsForm";
+import CustomerForm from "./components/CustomerForm";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState,useEffect } from "react";
 
@@ -60,7 +60,7 @@ const App = () => {
         
 
         <Route path="/instructions" component={Instructions} />
-        <Route path="/customerdetails" component={CustomerDetailsForm} />
+        <Route path="/customerForm" component={CustomerForm} />
         </Switch>
       </>
     </Router>
