@@ -6,7 +6,8 @@ import Home from "./components/Home";
 import Items from "./components/Items";
 import Basket from "./components/Basket";
 import CustomerForm from "./components/CustomerForm";
-import {getCustomers} from "./components/CustomerService";
+// import {getCustomers} from "./components/CustomerService";
+import OrderForm from "./components/OrderForm";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState,useEffect } from "react";
 
@@ -61,6 +62,7 @@ const App = () => {
     // setCustomer(temp);
   }
 
+  const[order,SetOrder] = useState([]);
   
 
 
@@ -112,8 +114,8 @@ const App = () => {
         
 
         <Route path="/instructions" component={Instructions} />
-        <Route path="/customerDetails" render={()=><CustomerForm addCustomer={addCustomer}  basket{...basket} />}/>
-        <Route path="/customerDetails" render={()=><CustomerForm addCustomer={addCustomer}  basket{...basket} />}/>
+        <Route path="/customerDetails" render={()=><CustomerForm basket{...basket} />}/>
+        <Route path="/orderForm" component={()=><OrderForm customer={customer} basket={basket} />}/>
         </Switch>
       </>
     </Router>
