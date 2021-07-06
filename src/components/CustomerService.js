@@ -1,11 +1,11 @@
-const baseURL = 'http://localhost:5000/customers'
+const baseURL = 'http://localhost:8080/customers/'
 
 export const getCustomers = () => {
     return fetch(baseURL)
         .then(res => res.json())
 }
 
-export const postCustomers = (payload) => {
+export const postCustomer = (payload) => {
     return fetch(baseURL, {
         method: 'POST',
         body: JSON.stringify(payload),

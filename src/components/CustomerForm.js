@@ -1,5 +1,5 @@
 import {useState} from "react";
-import { postCustomer } from "./CustomerService";
+import {postCustomer} from "./CustomerService";
 
 const CustomerForm = ({addCustomer}) => {
     
@@ -30,7 +30,7 @@ const CustomerForm = ({addCustomer}) => {
             </div>
 
             <div className="formWrap">
-                <label htmlFor="email">email address</label>
+                <label htmlFor="email">Email Address:</label>
                 <input onChange={onChange} type="text" id="email"  />
             </div>
 

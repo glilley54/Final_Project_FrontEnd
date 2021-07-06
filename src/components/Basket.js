@@ -4,9 +4,9 @@ import { Card, CardColumns, Button,} from "react-bootstrap";
 
 const Basket = ({basket}) => {
 
-  const handleRemoveFromBasket = () => {
-    basket.remove(item);
-  }
+  // // const handleRemoveFromBasket = () => {
+  // //   basket.remove(item);
+  // }
 
    
   return (
@@ -19,7 +19,7 @@ const Basket = ({basket}) => {
             <Card.Title>{item.type}</Card.Title>
             <Card.Text>{item.description}</Card.Text>
             <Card.Text>£{item.price}</Card.Text>
-            <Button onClick={() => handleremoveFromBasket()} variant="primary" href={item.url} target="_blank">
+            <Button variant="primary" href={item.url} target="_blank">
               remove from basket
             </Button>
           </Card.Body>

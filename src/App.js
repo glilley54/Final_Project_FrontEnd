@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Items from "./components/Items";
 import Basket from "./components/Basket";
 import CustomerForm from "./components/CustomerForm";
+import {getCustomers} from "./components/CustomerService";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState,useEffect } from "react";
 
@@ -19,6 +20,14 @@ const App = () => {
 
   const [basket, setBasket] = useState([]);
 
+  const [customer, setCustomer] = useState([]);
+
+
+  const addCustomer = (customer) =>{
+    const temp = customer.map(s =>s);
+    temp.push(customer);
+    setCustomer(temp);
+  }
 
   
 
@@ -37,6 +46,11 @@ const App = () => {
   const handleRemoveFromBasket =(item) =>{
     basket.remove(item);
   }
+
+
+  
+  
+
 
 
 
@@ -60,7 +74,7 @@ const App = () => {
         
 
         <Route path="/instructions" component={Instructions} />
-        <Route path="/customerForm" component={CustomerForm} />
+        <Route path="/customerDetails" component={CustomerForm} />
         </Switch>
       </>
     </Router>
