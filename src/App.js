@@ -5,6 +5,7 @@ import Instructions from "./components/Instructions";
 import Home from "./components/Home";
 import Items from "./components/Items";
 import Basket from "./components/Basket";
+import Confirmation from "./components/Confirmation";
 import CustomerForm from "./components/CustomerForm";
 // import {getCustomers} from "./components/CustomerService";
 import OrderForm from "./components/OrderForm";
@@ -115,7 +116,7 @@ const App = () => {
 
         <Route path="/instructions" component={Instructions} />
         <Route path="/customerDetails" render={()=><CustomerForm basket={basket} />}/>
-        <Route path="/orderForm" component={()=><OrderForm customer={customer} basket={basket} />}/>
+        <Route path="/confirmation" component={()=><Confirmation customer={customer} />}/>
         </Switch>
       </>
     </Router>

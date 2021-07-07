@@ -1,8 +1,11 @@
 import {useState} from "react";
 import {postCustomer} from "./CustomerService";
 import { postOrder } from "./OrderService";
+import { useHistory } from "react-router-dom";
 
 const CustomerForm = ({basket}) => {
+
+    let history = useHistory();
     
     const [formData, setFormData] = useState({})
 
@@ -14,7 +17,7 @@ const CustomerForm = ({basket}) => {
     const onSubmit = (e) =>{
         e.preventDefault();
         postCustomer(formData).then((customer)=>{
-            postOrder(customer,basket)
+            postOrder(customer,basket).then(history.push('/confirmation'))
         })
     }
 
