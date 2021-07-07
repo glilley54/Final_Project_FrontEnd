@@ -114,7 +114,7 @@ const App = () => {
         
 
         <Route path="/instructions" component={Instructions} />
-        <Route path="/customerDetails" render={()=><CustomerForm basket{...basket} />}/>
+        <Route path="/customerDetails" render={()=><CustomerForm basket={basket} />}/>
         <Route path="/orderForm" component={()=><OrderForm customer={customer} basket={basket} />}/>
         </Switch>
       </>

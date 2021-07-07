@@ -5,10 +5,15 @@ export const getOrders = () => {
         .then(res => res.json())
 }
 
-export const postOrder = (payload) => {
+export const postOrder = (customer,basket) => {
+    const newOrder = {
+        date : "25/06/2025",
+        customer: customer,
+        items: basket
+    }
     return fetch(baseURL, {
         method: 'POST',
-        body: JSON.stringify(payload),
+        body: JSON.stringify(newOrder),
         headers: { 'Content-Type': 'application/json' }
     })
     .then(res => res.json())

@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {postCustomer} from "./CustomerService";
+import { postOrder } from "./OrderService";
 
 const CustomerForm = ({basket}) => {
     
@@ -12,8 +13,8 @@ const CustomerForm = ({basket}) => {
 
     const onSubmit = (e) =>{
         e.preventDefault();
-        postCustomer(formData).then((data)=>{
-            // addCustomer(data);
+        postCustomer(formData).then((customer)=>{
+            postOrder(customer,basket)
         })
     }
 
