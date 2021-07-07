@@ -24,7 +24,11 @@ const NavBar = () => {
       <Link to="/basket">Basket</Link>
       <li>
       
-      <Link to="/customerdetails">Customer Details</Link>
+      <Link to="/customerForm">Customer Form</Link>
+      </li>
+
+      <li>
+        <Link to="/orderForm">Order Form</Link>
       </li>
       <li>
 

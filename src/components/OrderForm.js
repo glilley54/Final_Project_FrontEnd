@@ -22,10 +22,15 @@ const OrderForm = ({customer,basket}) => {
         postOrder(formData).then((data)=>{
             
         })
+
+
+        const customerOptions = customers.map((customer, index) => {
+            return <option key={index} value={index}>{customer.firstName}</option>
+        })
     }
 
     return (
-        <form onSubmit={onSubmit} id="customer-form" >
+        <form onSubmit={onSubmit} id="order-form" >
             <h2>Add Order Details</h2>
             <div className="formWrap">
                 <label htmlFor="customerName">Customer Name:</label>
