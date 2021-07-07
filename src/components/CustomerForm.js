@@ -17,7 +17,10 @@ const CustomerForm = ({basket}) => {
     const onSubmit = (e) =>{
         e.preventDefault();
         postCustomer(formData).then((customer)=>{
-            postOrder(customer,basket).then(history.push('/confirmation'))
+            postOrder(customer,basket)
+            .then((order)=>{
+                history.push('/confirmation/'+ order.id)
+            })
         })
     }
 

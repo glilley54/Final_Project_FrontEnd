@@ -24,13 +24,8 @@ const NavBar = () => {
       <Link to="/basket">Basket</Link>
       <li>
       
-      <Link to="/customerDetails">Customer Form</Link>
-      </li>
-
-      <li>
-        <Link to="/orderForm">Order Form</Link>
-      </li>
-      <li>
+     
+      
 
         <button onClick={goBack}>Back</button>
       </li>

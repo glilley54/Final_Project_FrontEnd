@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import {Redirect} from 'react-router-dom';
 
 import { useHistory } from "react-router-dom";
-import { Card, CardColumns, Button,} from "react-bootstrap";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import { Card, CardColumns, Button} from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Basket = ({basket, handleRemoveFromBasket}) => {
 

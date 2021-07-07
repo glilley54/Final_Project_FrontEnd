@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
@@ -9,7 +10,7 @@ import Confirmation from "./components/Confirmation";
 import CustomerForm from "./components/CustomerForm";
 // import {getCustomers} from "./components/CustomerService";
 import OrderForm from "./components/OrderForm";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import React, { useState,useEffect } from "react";
 
 
@@ -116,7 +117,7 @@ const App = () => {
 
         <Route path="/instructions" component={Instructions} />
         <Route path="/customerDetails" render={()=><CustomerForm basket={basket} />}/>
-        <Route path="/confirmation" component={()=><Confirmation customer={customer} />}/>
+        <Route path="/confirmation/:orderId" component={()=><Confirmation customer={customer} />}/>
         </Switch>
       </>
     </Router>
