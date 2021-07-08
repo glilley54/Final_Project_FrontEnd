@@ -1,7 +1,6 @@
 import React from "react";
 import { getOrderById } from "./OrderService";
 import {useParams} from "react-router-dom";
-import { nullLiteral } from "@babel/types";
 import { useState,useEffect } from "react";
 
 
@@ -42,9 +41,12 @@ return (
 
             <h1>Confirmation of your order</h1>
             <p>order id number= {orderId}</p>
-            <p>Name: {order.customer.firstName}</p>
+            <p>Name: {order.customer.firstName +  order.customer.lastName}</p>
             <p>Date: {order.date}</p>
-            
+            <p>Deliver Address:{order.customer.address}</p>
+            <p>Items: {order.items.description}</p>
+            <p>price: {order.items.price}</p>
+
             <hr></hr>
         </>
 
