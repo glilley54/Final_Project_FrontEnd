@@ -40,7 +40,7 @@ return (
 <>
 <Container>  
 <Row>  
-<Card className="m-4"  style={{ width: "20rem" }}> 
+<Card className="m-4"  style={{ width: "50rem" }}> 
     
 
             <h1>Confirmation of your order</h1>
@@ -53,7 +53,7 @@ return (
             <p>Items: {order.items.description}</p>
             <p>price: {order.items.price}</p>
 
-            <hr></hr>
+          
 
             </Card>
 

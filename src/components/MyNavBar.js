@@ -12,8 +12,9 @@ const MyNavBar = () =>{
   }
 
   return( 
+<Container>
 <Navbar bg="light" expand="lg">
-  <Container>
+  
     <Navbar.Brand href="#home">Dough Delivered</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
@@ -25,8 +26,9 @@ const MyNavBar = () =>{
         <Button onClick={goBack}>Back</Button>
       </Nav>
     </Navbar.Collapse>
-  </Container>
+  
 </Navbar>
+</Container>
 )
 
 }

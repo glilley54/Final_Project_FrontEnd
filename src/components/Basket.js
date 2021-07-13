@@ -38,10 +38,12 @@ const Basket = ({basket, handleRemoveFromBasket}) => {
           </Card.Body>
         </Card>
       ))}
+      <Button onClick={onClick} >checkout</Button>
       </Row>
+      
     </CardColumns>
 
-    <Button onClick={onClick} >checkout</Button>
+    
 
     
 

@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: white;
+  background-color:white;;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,6 +40,7 @@
 
 
 form {
+  align-self: right;
 	width: 75%;
 	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.7);
