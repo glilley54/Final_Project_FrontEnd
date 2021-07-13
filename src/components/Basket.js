@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import {Redirect} from 'react-router-dom';
 
 import { useHistory } from "react-router-dom";
-import { Card, CardColumns, Button} from "react-bootstrap";
+import { Card, CardColumns, Button, Container, Row} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Basket = ({basket, handleRemoveFromBasket}) => {
@@ -20,7 +20,10 @@ const Basket = ({basket, handleRemoveFromBasket}) => {
  
   return (
     <>
+    <Container> 
+
     <CardColumns>
+    <Row>  
       {basket.map((item) => (
         <Card className="m-4" key={item.id} style={{ width: "20rem" }}>
           <Card.Img variant="top" src={item.image} />
@@ -35,9 +38,14 @@ const Basket = ({basket, handleRemoveFromBasket}) => {
           </Card.Body>
         </Card>
       ))}
+      </Row>
     </CardColumns>
 
     <Button onClick={onClick} >checkout</Button>
+
+    
+
+    </Container>
     </>
   );
 
