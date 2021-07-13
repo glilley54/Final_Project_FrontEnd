@@ -2,6 +2,7 @@ import {useState} from "react";
 import {postCustomer} from "./CustomerService";
 import { postOrder } from "./OrderService";
 import { useHistory } from "react-router-dom";
+import { Button, Container, Row} from "react-bootstrap";
 
 const CustomerForm = ({basket}) => {
 
@@ -46,7 +47,7 @@ const CustomerForm = ({basket}) => {
                 <input onChange={onChange} type="text" id="address"  />
             </div>
 
-            <input type="submit" value="Save" id="save"/>
+            <Button onClick={onSubmit}>Confirm Order</Button>
 	    </form>
 
     );

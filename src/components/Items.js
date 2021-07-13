@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardDeck, Button, Container, Row} from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Items = ( {handleAddToBasket} ) => {
     const [items, setItems] = useState([]);
@@ -16,6 +16,7 @@ const Items = ( {handleAddToBasket} ) => {
    
     <CardDeck>
     <Row >
+    
       {items.map((item) => (
         <Card className="m-4" key={item.id} style={{ width: "20rem" }}>
           <Card.Img variant="top" src={item.image} />
@@ -31,6 +32,7 @@ const Items = ( {handleAddToBasket} ) => {
         </Card>
       ))}
       </Row>
+      
     </CardDeck>
     
     </Container>
