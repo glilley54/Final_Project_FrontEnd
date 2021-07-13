@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import NavBar from "./components/NavBar";
+import MyNavBar from "./components/MyNavBar";
 import Instructions from "./components/Instructions";
 import Home from "./components/Home";
 import Items from "./components/Items";
@@ -10,6 +10,7 @@ import Confirmation from "./components/Confirmation";
 import CustomerForm from "./components/CustomerForm";
 // import {getCustomers} from "./components/CustomerService";
 import OrderForm from "./components/OrderForm";
+import { Container, Row, Col, Button, Card, Form } from 'react-bootstrap'
 
 import React, { useState,useEffect } from "react";
 
@@ -105,9 +106,13 @@ const App = () => {
   
 
   return (
+    <>
+   <Container>
+    
+    
     <Router>
-      <>
-        <NavBar />
+    
+        <MyNavBar />
         <Switch>
         <Route exact path="/" component={Home} />
 
@@ -119,8 +124,13 @@ const App = () => {
         <Route path="/customerDetails" render={()=><CustomerForm basket={basket} />}/>
         <Route path="/confirmation/:orderId" component={()=><Confirmation customer={customer} />}/>
         </Switch>
-      </>
+     
     </Router>
+    <col />
+    </Container>
+
+    </>
+
   );
 }
 

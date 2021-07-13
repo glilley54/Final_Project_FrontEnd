@@ -2,8 +2,9 @@ import React from "react";
 
 const Home = () => (
   <div>
-    <h4>Hello Welcome to the homepage</h4>
-    <p>Welcome Dough Delivered, dough balls is made with the finest quality ingredients: Caputo Tipo 00 Pizzeria flour, live yeast, purified water and Himalayan pink salt. Our dough balls are made to our own 60% hydration recipe, and each dough ball weighs 250 grams, perfect for a 12" pizza.
+    <h4>Hello Welcome Dough Delivered!</h4>
+    
+    <p>dough balls is made with the finest quality ingredients: Caputo Tipo 00 Pizzeria flour, live yeast, purified water and Himalayan pink salt. Our dough balls are made to our own 60% hydration recipe, and each dough ball weighs 250 grams, perfect for a 12" pizza.
 
 Dough balls will be semi-frozen on arrival, and can safely be refrozen without affecting the final result (amazing pizza!).
 

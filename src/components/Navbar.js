@@ -21,6 +21,7 @@ const NavBar = () => {
       <li>
         <Link to="/instructions">Instructions</Link>
       </li>
+      
       <Link to="/basket">Basket</Link>
       <li>
       
