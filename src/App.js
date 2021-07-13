@@ -107,27 +107,29 @@ const App = () => {
 
   return (
     <>
-   <Container>
+   
     
     
     <Router>
-    
+    <Container> 
+    <Row>
+    <Col>
         <MyNavBar />
         <Switch>
         <Route exact path="/" component={Home} />
-
         <Route path="/order" render={()=> <Items handleAddToBasket={handleAddToBasket}/>}/>
         <Route path="/basket" render={()=> <Basket basket={basket} handleRemoveFromBasket={handleRemoveFromBasket} />}/>
-        
-
         <Route path="/instructions" component={Instructions} />
         <Route path="/customerDetails" render={()=><CustomerForm basket={basket} />}/>
         <Route path="/confirmation/:orderId" component={()=><Confirmation customer={customer} />}/>
         </Switch>
-     
+        </Col>  
+        </Row>
+       
+        </Container>
     </Router>
-    <col />
-    </Container>
+    
+    
 
     </>
 
