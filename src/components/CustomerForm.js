@@ -2,7 +2,7 @@ import {useState} from "react";
 import {postCustomer} from "./CustomerService";
 import { postOrder } from "./OrderService";
 import { useHistory } from "react-router-dom";
-import { Button, Container, Row} from "react-bootstrap";
+import { Button, Container, Row, CardColumns, Card} from "react-bootstrap";
 
 const CustomerForm = ({basket}) => {
 
@@ -26,6 +26,13 @@ const CustomerForm = ({basket}) => {
     }
 
     return (
+
+        <>
+        <Container> 
+    
+        <CardColumns>
+        <Row>  
+        <Card className="m-4" style={{ width: "20rem" }}>
         <form onSubmit={onSubmit} id="customer-form" >
             <h2>Add Customer Details</h2>
             <div className="formWrap">
@@ -49,6 +56,16 @@ const CustomerForm = ({basket}) => {
 
             <Button onClick={onSubmit}>Confirm Order</Button>
 	    </form>
+        </Card>
+        </Row> 
+        </CardColumns>
+
+        </Container> 
+
+        </>
+    
+        
+        
 
     );
 }

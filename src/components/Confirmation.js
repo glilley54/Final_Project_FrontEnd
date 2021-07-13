@@ -2,6 +2,7 @@ import React from "react";
 import { getOrderById } from "./OrderService";
 import {useParams} from "react-router-dom";
 import { useState,useEffect } from "react";
+import { Button, Container, Row, CardColumns, Card} from "react-bootstrap";
 
 
 
@@ -37,6 +38,9 @@ return (
    
 
 <>
+<Container>  
+<Row>  
+<Card className="m-4"  style={{ width: "20rem" }}> 
     
 
             <h1>Confirmation of your order</h1>
@@ -44,10 +48,17 @@ return (
             <p>Name: {order.customer.firstName +  order.customer.lastName}</p>
             <p>Date: {order.date}</p>
             <p>Deliver Address:{order.customer.address}</p>
+
+
             <p>Items: {order.items.description}</p>
             <p>price: {order.items.price}</p>
 
             <hr></hr>
+
+            </Card>
+
+</Row>
+            </Container>
         </>
 
 )
