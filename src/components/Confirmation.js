@@ -39,8 +39,8 @@ return (
 
 <>
 <Container>  
-<Row>  
-<Card className="m-4"  style={{ width: "50rem" }}> 
+
+<Card className="m-4"  style={{ width: "60rem" }}> 
     
 
             <h1>Confirmation of your order</h1>
@@ -57,7 +57,7 @@ return (
 
             </Card>
 
-</Row>
+
             </Container>
         </>
 

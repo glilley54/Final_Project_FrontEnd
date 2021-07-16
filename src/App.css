@@ -1,4 +1,13 @@
-.App {
+body {
+  background-color:smoke;
+  color : black;
+}
+
+
+
+
+
+/* .App {
   text-align: center;
   background-color: blue;
 }
@@ -51,4 +60,4 @@ form {
 .formWrap {
 	margin-bottom: 10px;
 }
-
+ */

@@ -9,7 +9,7 @@ import Basket from "./components/Basket";
 import Confirmation from "./components/Confirmation";
 import CustomerForm from "./components/CustomerForm";
 // import {getCustomers} from "./components/CustomerService";
-import OrderForm from "./components/OrderForm";
+
 import { Container, Row, Col, Button, Card, Form } from 'react-bootstrap'
 
 import React, { useState,useEffect } from "react";
@@ -113,19 +113,23 @@ const App = () => {
     
     
     <Router>
-    <Container> 
+    <Container fluid ='md'> 
     <Row>
-    <Col>
+    
         <MyNavBar />
+    
         <Switch>
+     
         <Route exact path="/" component={Home} />
+        
         <Route path="/order" render={()=> <Items handleAddToBasket={handleAddToBasket}/>}/>
         <Route path="/basket" render={()=> <Basket basket={basket} handleRemoveFromBasket={handleRemoveFromBasket} />}/>
         <Route path="/instructions" component={Instructions} />
         <Route path="/customerDetails" render={()=><CustomerForm basket={basket} />}/>
         <Route path="/confirmation/:orderId" component={()=><Confirmation customer={customer} />}/>
+       
         </Switch>
-        </Col>  
+        
         </Row>
        
         </Container>
