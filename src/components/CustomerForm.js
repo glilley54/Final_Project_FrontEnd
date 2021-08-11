@@ -28,37 +28,37 @@ const CustomerForm = ({basket}) => {
     return (
 
         <>
-        <Container> 
+        <Container
+
     
-        <CardColumns>
-        <Row>  
-        <Card className="m-4" style={{ width: "20rem" }}>
+        className="m-6" style={{ width: "20rem" }}>
         <form onSubmit={onSubmit} id="customer-form" >
-            <h2>Add Customer Details</h2>
-            <div className="formWrap">
+            <h2>Customer Details</h2>
+            <div className="form-control">
+            <div>
                 <label htmlFor="firstName">First Name:</label>
                 <input onChange={onChange} type="text" id="firstName"  />
             </div>
-            <div className="formWrap">
+            <div>
                 <label htmlFor="lastName">Last Name:</label>
                 <input onChange={onChange} type="text" id="lastName"  />
             </div>
 
-            <div className="formWrap">
+            <div>
                 <label htmlFor="email">Email Address:</label>
                 <input onChange={onChange} type="text" id="email"  />
             </div>
 
-            <div className="formWrap">
+            <div>
                 <label htmlFor="address">Delivery Address:</label>
                 <input onChange={onChange} type="text" id="address"  />
             </div>
 
-            <Button onClick={onSubmit}>Confirm Order</Button>
+            </div>
+
+            <Button  onClick={onSubmit}>Confirm Order</Button>
 	    </form>
-        </Card>
-        </Row> 
-        </CardColumns>
+        
 
         </Container> 
 

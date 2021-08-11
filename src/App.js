@@ -1,5 +1,6 @@
+// import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MyNavBar from "./components/MyNavBar";
 import Instructions from "./components/Instructions";
@@ -10,7 +11,7 @@ import Confirmation from "./components/Confirmation";
 import CustomerForm from "./components/CustomerForm";
 // import {getCustomers} from "./components/CustomerService";
 
-import { Container, Row, Col, Button, Card, Form } from 'react-bootstrap'
+import { Container, Row, Column, Button, Card, Form } from 'react-bootstrap'
 
 import React, { useState,useEffect } from "react";
 
