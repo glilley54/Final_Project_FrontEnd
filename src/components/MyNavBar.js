@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, useHistory, NavLink } from "react-router-dom";
-import { Navbar,Container,Nav, Button } from "react-bootstrap"
+import { Navbar,Container,Nav, Button, Image } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -12,8 +12,14 @@ const MyNavBar = () =>{
   }
 
   return( 
+<>
+
 <Container>
-<Navbar bg="light" expand="lg">
+
+
+
+
+<Navbar className="justify-content-center" bg="light" expand="lg" mx="auto">
   
     <Navbar.Brand href="#home">Dough Delivered</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,15 +29,17 @@ const MyNavBar = () =>{
         <Nav.Link><Link to="/order">Order</Link></Nav.Link> 
         <Nav.Link><Link to="/instructions">Instructions</Link></Nav.Link> 
         <Nav.Link><Link to="/basket">Basket</Link></Nav.Link> 
-        <Button onClick={goBack}>Back</Button>
+        <Button  onClick={goBack}>Back</Button>
       </Nav>
     </Navbar.Collapse>
   
 </Navbar>
+
 </Container>
+
+</>
 )
 
 }
-
 
 export default MyNavBar
