@@ -109,11 +109,12 @@ const App = () => {
 
   return (
     <>
+
    
     
     
     <Router>
-    <Container fluid ='md'> 
+    <Container bg-primary fluid ='md'> 
     <Row>
     
         <MyNavBar />

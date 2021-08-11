@@ -1,5 +1,5 @@
 import React from "react";
-import { Container} from "react-bootstrap";
+import { Container, Image} from "react-bootstrap";
 
 
 const Home = () => (
@@ -12,8 +12,10 @@ const Home = () => (
   <div>
 
     <h4>Hello Welcome Dough Delivered!</h4>
-    
-    <p>dough balls is made with the finest quality ingredients: Caputo Tipo 00 Pizzeria flour, live yeast, purified water and Himalayan pink salt. Our dough balls are made to our own 60% hydration recipe, and each dough ball weighs 250 grams, perfect for a 12" pizza.
+    <div>
+    <Image src="https://images.unsplash.com/photo-1537734796389-e1fc293cf856?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80" rounded/>
+    </div>  
+    <p>Our dough balls are made with the finest quality ingredients: Caputo Tipo 00 Pizzeria flour, live yeast, purified water and Himalayan pink salt. Our dough balls are made to our own 60% hydration recipe, and each dough ball weighs 250 grams, perfect for a 12" pizza.
 
 Dough balls will be semi-frozen on arrival, and can safely be refrozen without affecting the final result (amazing pizza!).
 
