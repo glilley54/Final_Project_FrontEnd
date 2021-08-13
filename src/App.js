@@ -112,14 +112,15 @@ const App = () => {
   return (
     <>
 
-    
+
     
     <Router>
+    <MyNavBar />
     <Container bg-primary fluid ='md'> 
     
     <Row>
     
-        <MyNavBar />
+        
     
         <Switch>
      
@@ -135,8 +136,9 @@ const App = () => {
 
     
         </Row>
-        <Footer />
+        
         </Container>
+        <Footer />
     </Router>
 
     
