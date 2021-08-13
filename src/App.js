@@ -111,7 +111,6 @@ const App = () => {
   return (
     <>
 
-   
     
     
     <Router>
@@ -133,7 +132,6 @@ const App = () => {
         </Switch>
         
         </Row>
-       
         </Container>
     </Router>
     

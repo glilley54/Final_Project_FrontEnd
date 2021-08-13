@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Image, Row, Col} from "react-bootstrap";
+import { Container,Carousel, Image, Row, Col} from "react-bootstrap";
 
 
 const Home = () => (
@@ -14,7 +14,30 @@ const Home = () => (
 
     <br></br> 
 
- 
+    <Carousel align="center">
+  <Carousel.Item interval={2000}>
+
+    <img width={1300} height={500} alt="1000x500"src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      alt="First slide"
+    />
+  
+  </Carousel.Item>
+
+  <Carousel.Item interval={2000}>
+    <img width={1300} height={500} alt="1000x500"src="https://images.unsplash.com/photo-1534963063257-6b65b54e438b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+      alt="Second slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item interval={2000}>
+    <img width={1300} height={500} alt="1000x500"
+      src="https://images.unsplash.com/photo-1564128442383-9201fcc740eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80"
+      alt="Third slide"
+    />
+  </Carousel.Item>
+</Carousel>
+
+    <br></br>
+
     
     <Row>
     <Col>
