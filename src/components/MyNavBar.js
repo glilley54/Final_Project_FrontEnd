@@ -19,17 +19,17 @@ const MyNavBar = () =>{
 
 
 
-<Navbar className="justify-content-center" bg="info" expand="lg" mx="auto">
+<Navbar className="justify-content-center" bg="light" expand="lg" mx="auto">
   
     <Navbar.Brand href="#home">Dough Delivered</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
-      <Nav.Link><Link to="/">Home</Link> </Nav.Link>
-        <Nav.Link><Link to="/order">Order</Link></Nav.Link> 
-        <Nav.Link><Link to="/instructions">Instructions</Link></Nav.Link> 
-        <Nav.Link><Link to="/basket">Basket</Link></Nav.Link> 
-        <Button  onClick={goBack}>Back</Button>
+      <Nav.Link href="/">Home</Nav.Link>
+        <Nav.Link href="/order">Order</Nav.Link> 
+        <Nav.Link href="/instructions">Instructions</Nav.Link> 
+        <Nav.Link href="/basket">Basket</Nav.Link> 
+        <Button variant="outline-dark" onClick={goBack}>Back</Button>
       </Nav>
     </Navbar.Collapse>
   

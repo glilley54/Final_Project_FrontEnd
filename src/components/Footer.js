@@ -5,7 +5,7 @@ const Footer = () => (
 
 <>
 
-  <Navbar bg="primary" variant="light">
+  <Navbar bg="light" variant="light">
     <Container>
       <Navbar.Brand href="#home">
         <img
