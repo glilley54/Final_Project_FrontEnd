@@ -19,7 +19,7 @@ const MyNavBar = () =>{
 
 
 
-<Navbar className="justify-content-center" bg="light" expand="lg" mx="auto">
+<Navbar className="justify-content-center" bg="info" expand="lg" mx="auto">
   
     <Navbar.Brand href="#home">Dough Delivered</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />

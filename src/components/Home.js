@@ -3,8 +3,9 @@ import { Container,Carousel, Image, Row, Col} from "react-bootstrap";
 
 
 const Home = () => (
-  <>
+  
   <Container> 
+
 
   <br></br>
 
@@ -13,6 +14,9 @@ const Home = () => (
     </header> 
 
     <br></br> 
+    <Container/>
+
+    <Container>
 
     <Carousel align="center">
   <Carousel.Item interval={2000}>
@@ -38,7 +42,9 @@ const Home = () => (
 
     <br></br>
 
-    
+    </Container>
+
+    <Container>
     <Row>
     <Col>
     <Image src="https://images.unsplash.com/photo-1537734796389-e1fc293cf856?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80" rounded />
@@ -78,9 +84,10 @@ Please note: Your dough balls will be shipped immediately, as per delivery sched
   </Row>
 
  
+   </Container>
+
+   <br></br> </Container>
   
-  </Container>
-  </>
 );
 
 export default Home;
