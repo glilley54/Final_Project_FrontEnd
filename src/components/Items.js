@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, CardDeck, Button, Container, Row} from "react-bootstrap";
+import { Card, Button, Container, Row, CardGroup} from "react-bootstrap";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Items = ( {handleAddToBasket} ) => {
@@ -14,28 +14,28 @@ const Items = ( {handleAddToBasket} ) => {
   return (
     <Container>
     <br></br>
- <br></br>
+ 
    
-    <CardDeck>
-    <Row >
+    <CardGroup> 
+   
     
       {items.map((item) => (
         <Card className="m-4" key={item.id} style={{ width: "20rem" }}>
-          <Card.Img variant="top" src={item.image} />
+          <Card.Img fluid variant="top" src={item.image} />
 
           <Card.Body>
             <Card.Title>{item.type}</Card.Title>
             <Card.Text>{item.description}</Card.Text>
             <Card.Text>£{item.price}</Card.Text>
-            <Button onClick={() => handleAddToBasket(item)}  variant="primary" href={item.url} target="_blank">
+            <Button onClick={() => handleAddToBasket(item)}  variant="info" href={item.url} target="_blank">
               Add to basket
             </Button>
           </Card.Body>
         </Card>
       ))}
-      </Row>
       
-    </CardDeck>
+      
+    </CardGroup>
     
     </Container>
   );
