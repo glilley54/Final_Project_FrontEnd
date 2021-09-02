@@ -19,10 +19,10 @@ const Instructions = () => (
     </Col>
 
     <Col xs={6} md={4}>
-      <Image src="https://images.unsplash.com/photo-1583729101899-55bb892b917c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" fluid />
+      <Image src="https://images.unsplash.com/photo-1605117983026-24a5c0084050?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEwfHxwaXp6YSUyMHByZXBlcmFydGlvbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" fluid />
     </Col>
     <Col xs={6} md={4}>
-      <Image src="https://images.unsplash.com/photo-1583729101899-55bb892b917c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" fluid />
+      <Image src="https://images.unsplash.com/photo-1606152196365-d1ce5ea838b5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjM0fHxwaXp6YSUyMGRvdWdoJTIwcHJlcGVyYXJ0aW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" fluid />
     </Col>
   </Row>
 

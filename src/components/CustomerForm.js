@@ -2,7 +2,7 @@ import {useState} from "react";
 import {postCustomer} from "./CustomerService";
 import { postOrder } from "./OrderService";
 import { useHistory } from "react-router-dom";
-import { Button, Container, Row, CardColumns, Card} from "react-bootstrap";
+import { Button, Container, Row,Image, CardColumns, Card} from "react-bootstrap";
 
 const CustomerForm = ({basket}) => {
 
@@ -59,7 +59,8 @@ const CustomerForm = ({basket}) => {
             <Button  onClick={onSubmit}>Confirm Order</Button>
 	    </form>
         
-
+        <Image src="https://images.unsplash.com/photo-1583729101899-55bb892b917c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" fluid />
+        
         </Container> 
 
         </>
