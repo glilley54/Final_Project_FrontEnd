@@ -30,7 +30,8 @@ const CustomerForm = ({basket}) => {
 
         <>
 
-  
+  <Container align="center"> 
+
         
         <form onSubmit={onSubmit} id="customer-form" >
             <h2>Customer Details</h2>
@@ -63,6 +64,9 @@ const CustomerForm = ({basket}) => {
             <Button  onClick={onSubmit}>Confirm Order</Button>
             
 	    </form>
+      
+
+      </Container>
 
        
 

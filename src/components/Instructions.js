@@ -31,7 +31,7 @@ const Instructions = () => (
 <br></br>
 <br></br>
 
-<h3>Directions</h3>
+<h3 text-align= "center"> Directions </h3>
     <p>
 Place two-thirds of the water in a large bowl. In a saucepan or microwave, bring the other third of water to boil, then add it to the cold water in the bowl. This creates the correct temperature for activating yeast. Whisk the salt and yeast into the warm water.
 If mixing by hand: Place the flour in a large bowl and pour the yeast mixture into it. Stir with a wooden spoon until a dough starts to form. Continue mixing by hand until the pizza dough comes together in a ball. Turn it onto a lightly floured surface and knead with both hands for about 10 minutes, until it is firm and stretchy. Return the dough to the bowl. Cover with cling film and leave to rise in a warm place for about 2 hours or until doubled in size.

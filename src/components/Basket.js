@@ -25,7 +25,7 @@ const Basket = ({basket, handleRemoveFromBasket}) => {
     <CardColumns>
     <Row>  
       {basket.map((item) => (
-        <Card className="m-4" key={item.id} style={{ width: "20rem" }}>
+        <Card key={item.id} style={{ width: "20rem" }}>
           <Card.Img variant="top" src={item.image} />
 
           <Card.Body>

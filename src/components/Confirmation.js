@@ -40,18 +40,19 @@ return (
 <>
 <Container>  
 
-<Card className="m-4"  style={{ width: "60rem" }}> 
+<Card className="m-4"  text-align= "centre" style={{ width: "60rem" }}> 
     
 
             <h1>Confirmation of your order</h1>
-            <p>order id number= {orderId}</p>
-            <p>Name: {order.customer.firstName +  order.customer.lastName}</p>
-            <p>Date: {order.date}</p>
-            <p>Deliver Address:{order.customer.address}</p>
 
+            <div id="confirmation-text">
+        
+            <p>ORDER ID NUMBER= {orderId}</p>
+            <p>NAME: {order.customer.firstName +  order.customer.lastName}</p>
+            <p>ORDER DATE: {order.date}</p>
+            <p>DELIVERY ADDRESS:{order.customer.address}</p>
 
-            <p>Items: {order.items.description}</p>
-            <p>price: {order.items.price}</p>
+            </div>
 
           
 
