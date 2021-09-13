@@ -14,6 +14,18 @@ h1,h3 {
 
 }
 
+.form-control {
+  flex-direction: column;
+  word-spacing: normal;
+  justify-content: center;
+  border-spacing: 10;
+  border: "light-gray";
+  font-weight: bolder;
+
+
+
+
+}
 
 
 
